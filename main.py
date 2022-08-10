@@ -1,7 +1,12 @@
-print(('10\n'*5)[:-1])
+from time import sleep
 
-print(16)
+def cook(name):
+    print(f'Подготовить блюдо {name}')
+    print(f'Поставить {name} на плиту')
+    sleep(20)
+    print(f'Блюдо {name} готово')
 
-input()
+cook('Лапша')
+cook('Курка')
+cook('Пельмени')
 
-print(10)
